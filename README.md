@@ -5,6 +5,6 @@ intagration with any service of Order and Delivery.
 It can be internet shop, Food marker (pizzeria), any 
 other online ordering platform. 
 
-Full description and Documantation [here](https://github.com/irony-rust/dots/)
+Full description and Documantation [here](docs/README.md)
 
 #### Licence: **MIT**
