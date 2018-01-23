@@ -26,3 +26,6 @@
 	* Business Support Service
 	* Auth for Support
 * General API documentation
+
+
+![DOTS sсheme](images/scheme.png)
