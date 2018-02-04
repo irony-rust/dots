@@ -2,15 +2,15 @@
 
 ## Content
 
-* Introduction
-	* What is DOTS?
-	* Basic component description
-	* Why we should use inrgration with DOTS?
+* [Introduction](WhatIsDOTS.md)
+	* [What is DOTS](WhatIsDOTS.md)
+	* [Basic components description](BasicComponentDescription.md)
+	* [Why we should use integration with DOTS?](WhyWeShouldUseIntegrationWithDOTS.md)
 * Store Segment
 	* Store Backend
 	* Store Notification System for Client Apps
-	* Store Adapters.
-	* Customer client Apps (mobile and web).
+	* Store Adapters
+	* Customer client Apps (mobile and web)
 * Brokering Segment
 	* Event Machine pool.
 	* Event Broker.
@@ -25,6 +25,10 @@
 	* Tech Support Service
 	* Business Support Service
 	* Auth for Support
+* Machine Lerning Segment
+	* Orders Optimizations
+	* Deliveries Optimizations
+	* Integrations Optimizations 	
 * General API documentation
 
 
