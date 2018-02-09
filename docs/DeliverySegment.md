@@ -8,7 +8,7 @@ Logistic optimization etc.
 
 ### Basic componenets is:
 * Carrier Service 
-* Location Service
+* [Location Service](LocationService.md)
 * [Auth Service](AuthService.md)
 * Notification Service for Carriers
 * Carrier Apps

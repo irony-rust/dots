@@ -1,6 +1,6 @@
 # Auth Service
 
-Auth Service reponse for login, registration, 
+Auth Service is reponsible for login, registration, 
 and Carrier identification.
 
 ## Events for Receive
@@ -16,10 +16,11 @@ and Carrier identification.
 
 | Field | Type [min/length/max] | Description | 
 | --- | --- | --- |
-| usernamee* | string [255] | Carrier user name |
+| username* | string [255] | Carrier user name |
 | password* | string [255] | Carrier password |
 | device_id* | string [100] | Carrier Device ID | 
-\* reqiered
+
+\* required
 
 ####  Response Fields:
 
@@ -27,7 +28,8 @@ and Carrier identification.
 | --- | --- | --- |
 | status* | [status_type](AdditionaServicesGenericTypes.md#status-type) | Response status |
 | token_info | [token_info_type](AdditionaServicesGenericTypes.md#token-info-type) | Token information for User |
-\* reqiered 
+
+\* required 
 
 ### Registration Event
 
@@ -37,8 +39,10 @@ and Carrier identification.
 | --- | --- | --- |
 | usernamee* | string [255] | Carrier user name |
 | password* | string [255] | Carrier password |
-| device_id* | string [100] | Carrier Device ID | 
-\* reqiered
+| device_id* | string [100] | Carrier Device ID |
+| profile* | [profile_type](AdditionaServicesGenericTypes.md#profile-type) | Profile user information |
+
+\* required
 
 ####  Response Fields:
 
@@ -46,7 +50,8 @@ and Carrier identification.
 | --- | --- | --- |
 | status* | [status_type](AdditionaServicesGenericTypes.md#status-type) | Response status |
 | token_info | [token_info_type](AdditionaServicesGenericTypes.md#token-info-type) | Token information for User |
-\* reqiered 
+
+\* required 
 
 ### GetToken Event
 
@@ -55,7 +60,8 @@ and Carrier identification.
 | Field | Type [min/length/max] | Description | 
 | --- | --- | --- |
 | device_id* | string [100] | Carrier Device ID | 
-\* reqiered
+
+\* required
 
 ####  Response Fields:
 
@@ -63,7 +69,8 @@ and Carrier identification.
 | --- | --- | --- |
 | status* | [status_type](AdditionaServicesGenericTypes.md#status-type) | Response status |
 | token_info | [token_info_type](AdditionaServicesGenericTypes.md#token-info-type) | Token information for User |
-\* reqiered 
+
+\* required 
 
 ### Logout
 
@@ -72,14 +79,16 @@ and Carrier identification.
 | Field | Type [min/length/max] | Description | 
 | --- | --- | --- |
 | device_id* | string [100] | Carrier Device ID | 
-\* reqiered
+
+\* required
 
 ####  Response Fields:
 
 | Field | Type [min/length/max] | Description |
 | --- | --- | --- |
 | status* | [status_type](AdditionaServicesGenericTypes.md#status-type) | Response status |
-\* reqiered 
+
+\* required 
 
 
 ### ForgotPassword
@@ -88,13 +97,15 @@ and Carrier identification.
 
 | Field | Type [min/length/max] | Description | 
 | --- | --- | --- |
-| usernamee* | string [255] | Carrier user name |
+| username* | string [255] | Carrier user name |
 | device_id* | string [100] | Carrier Device ID | 
-\* reqiered
+
+\* required
 
 ####  Response Fields:
 
 | Field | Type [min/length/max] | Description |
 | --- | --- | --- |
 | status* | [status_type](AdditionaServicesGenericTypes.md#status-type) | Response status |
-\* reqiered 
+
+\* required 

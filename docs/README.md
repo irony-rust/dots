@@ -16,7 +16,7 @@
 	* Event Broker.
 * [Delivery Segment](DeliverySegment.md)
 	* Delivery Service 
-	* Location Service
+	* [Location Service](LocationService.md)
 	* [Auth Service](AuthService.md)
 	* Notification Service for Carriers
 	* Carrier Apps
