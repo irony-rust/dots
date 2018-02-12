@@ -14,10 +14,10 @@
 * Brokering Segment
 	* Event Machine pool.
 	* Event Broker.
-* Carrier Management Segment
+* [Carrier Management Segment](CarrierManagementSegment.md)
 	* Carrier Service 
 	* Location Service
-	* Auth Service
+	* [Auth Service](AuthService.md)
 	* Notification Service for Carriers
 	* Carrier Apps
 	* Carrier Rating
@@ -30,6 +30,7 @@
 	* Deliveries Optimizations
 	* Integrations Optimizations 	
 * General API documentation
+	* [Additional Services Generic Types](AdditionalServicesGenericTypes.md)
 
 
 ![DOTS sсheme](images/scheme.png)
