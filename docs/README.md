@@ -30,6 +30,7 @@
 	* Deliveries Optimizations
 	* Integrations Optimizations 	
 * General API documentation
+	* Event Structure
 	* [Additional Services Generic Types](AdditionalServicesGenericTypes.md)
 
 
