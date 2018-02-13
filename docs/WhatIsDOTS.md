@@ -31,4 +31,4 @@ At the same time providing optimal algorithms for efficient and fast execution o
 * possibility of integration with any services
 * a wide range of applications: from the restaurant chain to the Internet supermarket.
 * a fast and effective system capable of self-learning and adjusting to your specific needs and business requirements.
-* unlike similar services its absolutely free to use and has open source code.
+* unlike similar services its absolutely free to use and has open source code base.
