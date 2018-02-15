@@ -14,13 +14,13 @@
 * Brokering Segment
 	* Event Machine pool.
 	* Event Broker.
-* [Carrier Management Segment](CarrierManagementSegment.md)
-	* Carrier Service 
+* [Delivery Segment](DeliverySegment.md)
+	* Delivery Service 
 	* Location Service
 	* [Auth Service](AuthService.md)
 	* Notification Service for Carriers
 	* Carrier Apps
-	* Carrier Rating
+	* Logistic Service
 * Supporting Segment
 	* Tech Support Service
 	* Business Support Service
