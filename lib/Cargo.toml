@@ -1,0 +1,11 @@
+[package]
+name = "dots"
+version = "0.1.0"
+authors = ["Evgeny Ukhanov <mrlsd@ya.ru>"]
+description = """
+Delivery & Order Tracking System focused on ease-of-use, efficiency, and speed.
+"""
+repository = "https://github.com/irony-rust/dots"
+license = "MIT"
+
+[dependencies]
