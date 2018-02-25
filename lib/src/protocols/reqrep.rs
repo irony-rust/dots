@@ -2,6 +2,7 @@ use nanomsg;
 use nanomsg::{Socket, Protocol};
 use std::io::{Read, Write};
 use std::result::{Result};
+use std::str;
 
 // Server setting type for protocol Server
 pub struct ServerSettings<'a> {
@@ -47,4 +48,28 @@ pub fn send(config: &ServerSettings, message: &String) -> SendResult {
     let _ = endpoint.shutdown()
         .map_err(|err| error!("send.endpoint.shutdown: {}", err) );
     return Ok(reply);
+}
+
+// Serve event messages
+pub fn serve<T: ServerHandler>(config: &ServerSettings, h: &T) -> ServeResult {
+    let mut socket = Socket::new(Protocol::Rep)
+        .map_err(|err| {error!("serve.Socket::new: {}", err); err })?;
+    socket.bind(&config.url[..])
+        .map_err(|err| {error!("serve.socket.bind: {}", err); err })?;
+
+    loop {
+        let mut msg = Vec::new();
+        let _ = socket.read_to_end(&mut msg)
+            .map_err(|err| error!("serve.socket.read_to_end: {}", err))
+            .and_then(|_| {
+                debug!("serve.socket.read_to_end: {}", str::from_utf8(&msg).unwrap());
+                h.handler(&msg)
+                    .map_err(|err| error!("serve.handler: {}", err))
+            })
+            .map(|msg| {
+                debug!("serve.socket.nb_write: {}", str::from_utf8(&msg).unwrap());
+                socket.nb_write(&msg[..])
+                    .map_err(|err| error!("serve.socket.nb_write: {}", err))
+            });
+    }
 }
